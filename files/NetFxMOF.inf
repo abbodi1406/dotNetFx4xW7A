@@ -1,0 +1,64 @@
+;
+; File Name: netfxmof.inf
+; Microsoft .NET Framework 4.x MOF and Perf Counters Registration
+;
+; Version 1.3
+;
+[Version]
+Signature=$Windows NT$
+
+[DefaultInstall.ntx86]
+RunPostSetupCommands=Register.NetFX.x86:1
+SmartReboot=N
+Cleanup=1
+
+[DefaultInstall.ntamd64]
+RunPostSetupCommands=Register.NetFX.x64:1
+SmartReboot=N
+Cleanup=1
+
+[Register.NetFX.x86]
+%11%\lodctr.exe "%10%\Microsoft.NET\Framework\v4.0.30319\_Networkingperfcounters.ini"
+%11%\lodctr.exe "%10%\Microsoft.NET\Framework\v4.0.30319\_SMSvcHostPerfCounters.ini"
+%11%\lodctr.exe "%10%\Microsoft.NET\Framework\v4.0.30319\_TransactionBridgePerfCounters.ini"
+%11%\lodctr.exe /m:"%10%\Microsoft.NET\Framework\v4.0.30319\ServiceModelPerformanceCounters.man"
+%11%\wbem\mofcomp.exe "%10%\Microsoft.NET\Framework\v4.0.30319\MOF\ServiceModel.mof"
+%11%\wbem\mofcomp.exe "%10%\Microsoft.NET\Framework\v4.0.30319\MOF\ServiceModel35.mof"
+%11%\lodctr.exe /m:"%10%\Microsoft.NET\Framework\v4.0.30319\WorkflowServiceHostPerformanceCounters.man"
+%11%\lodctr.exe "%10%\Microsoft.NET\Framework\v4.0.30319\aspnet_state_perf.ini"
+%11%\lodctr.exe "%10%\Microsoft.NET\Framework\v4.0.30319\aspnet_perf.ini"
+%11%\lodctr.exe "%10%\Microsoft.NET\Framework\v4.0.30319\aspnet_perf2.ini"
+%11%\wbem\mofcomp.exe "%10%\Microsoft.NET\Framework\v4.0.30319\aspnet.mof"
+%11%\lodctr.exe "%10%\Microsoft.NET\Framework\v4.0.30319\netmemorycache.ini"
+%11%\lodctr.exe "%10%\Microsoft.NET\Framework\v4.0.30319\_DataOracleClientPerfCounters_shared12_neutral.ini"
+%11%\lodctr.exe "%10%\Microsoft.NET\Framework\v4.0.30319\PerfCounters.ini"
+
+[Register.NetFX.x64]
+%16425%\lodctr.exe "%10%\Microsoft.NET\Framework\v4.0.30319\_Networkingperfcounters.ini"
+%16425%\lodctr.exe "%10%\Microsoft.NET\Framework\v4.0.30319\_SMSvcHostPerfCounters.ini"
+%16425%\lodctr.exe "%10%\Microsoft.NET\Framework\v4.0.30319\_TransactionBridgePerfCounters.ini"
+%16425%\lodctr.exe /m:"%10%\Microsoft.NET\Framework\v4.0.30319\ServiceModelPerformanceCounters.man"
+%16425%\wbem\mofcomp.exe "%10%\Microsoft.NET\Framework\v4.0.30319\MOF\ServiceModel.mof"
+%16425%\wbem\mofcomp.exe "%10%\Microsoft.NET\Framework\v4.0.30319\MOF\ServiceModel35.mof"
+%16425%\lodctr.exe /m:"%10%\Microsoft.NET\Framework\v4.0.30319\WorkflowServiceHostPerformanceCounters.man"
+%16425%\lodctr.exe "%10%\Microsoft.NET\Framework\v4.0.30319\aspnet_state_perf.ini"
+%16425%\lodctr.exe "%10%\Microsoft.NET\Framework\v4.0.30319\aspnet_perf.ini"
+%16425%\lodctr.exe "%10%\Microsoft.NET\Framework\v4.0.30319\aspnet_perf2.ini"
+%16425%\wbem\mofcomp.exe "%10%\Microsoft.NET\Framework\v4.0.30319\aspnet.mof"
+%16425%\lodctr.exe "%10%\Microsoft.NET\Framework\v4.0.30319\netmemorycache.ini"
+%16425%\lodctr.exe "%10%\Microsoft.NET\Framework\v4.0.30319\_DataOracleClientPerfCounters_shared12_neutral.ini"
+%16425%\lodctr.exe "%10%\Microsoft.NET\Framework\v4.0.30319\PerfCounters.ini"
+%11%\lodctr.exe "%10%\Microsoft.NET\Framework64\v4.0.30319\_Networkingperfcounters.ini"
+%11%\lodctr.exe "%10%\Microsoft.NET\Framework64\v4.0.30319\_SMSvcHostPerfCounters.ini"
+%11%\lodctr.exe "%10%\Microsoft.NET\Framework64\v4.0.30319\_TransactionBridgePerfCounters.ini"
+%11%\lodctr.exe /m:"%10%\Microsoft.NET\Framework64\v4.0.30319\ServiceModelPerformanceCounters.man"
+%11%\wbem\mofcomp.exe "%10%\Microsoft.NET\Framework64\v4.0.30319\MOF\ServiceModel.mof"
+%11%\wbem\mofcomp.exe "%10%\Microsoft.NET\Framework64\v4.0.30319\MOF\ServiceModel35.mof"
+%11%\lodctr.exe /m:"%10%\Microsoft.NET\Framework64\v4.0.30319\WorkflowServiceHostPerformanceCounters.man"
+%11%\lodctr.exe "%10%\Microsoft.NET\Framework64\v4.0.30319\aspnet_state_perf.ini"
+%11%\lodctr.exe "%10%\Microsoft.NET\Framework64\v4.0.30319\aspnet_perf.ini"
+%11%\lodctr.exe "%10%\Microsoft.NET\Framework64\v4.0.30319\aspnet_perf2.ini"
+%11%\wbem\mofcomp.exe "%10%\Microsoft.NET\Framework64\v4.0.30319\aspnet.mof"
+%11%\lodctr.exe "%10%\Microsoft.NET\Framework64\v4.0.30319\netmemorycache.ini"
+%11%\lodctr.exe "%10%\Microsoft.NET\Framework64\v4.0.30319\_DataOracleClientPerfCounters_shared12_neutral.ini"
+%11%\lodctr.exe "%10%\Microsoft.NET\Framework64\v4.0.30319\PerfCounters.ini"

@@ -1,0 +1,18 @@
+Name=NDP472-KB4480096
+Creator=abbodi86
+Version=4.7.3324.1
+Arc=x64
+Description=Microsoft .NET Framework 4.7.2
+
+[CopyFolder]
+assembly::Windows\Microsoft.NET
+Framework::Windows\Microsoft.NET
+inf::Windows
+Installer::Windows
+Microsoft.NET::Program Files (x86)
+Migration::Windows
+NetFramework::ProgramData\Microsoft
+System32::Windows
+SysWOW64::Windows
+v4.0.30319::Windows\Microsoft.NET\Framework64
+
