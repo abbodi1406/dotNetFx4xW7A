@@ -1,6 +1,6 @@
-# .NET 4.7.2 Wintoolkit Addon for Windows 7 SP1 x86/x64
+# .NET 4.8/4.7.2 Wintoolkit Addon for Windows 7 SP1 x86/x64
 
-* Addon for integrating updated .NET 4.7.2 package into offline install.wim images as pre-installed.
+* Addon for integrating updated .NET 4.8/4.7.2 package into offline install.wim images as pre-installed.
 
 * The addon is simply .7z file with .WA extension.
 
@@ -8,7 +8,7 @@
 
 * The addon will conflict with some Windows Updates (.NET 3.5 Family), so leave the addon's integration to the last.
 
-* To function properly, .NET 4.7.x require D3DCompiler_47.dll component, which is found in either the current "Monthly Quality Rollup" or "update KB4019990". It is recommended to integrate it first, or you can install it later.  
+* To function properly, .NET 4.8/4.7.2 require D3DCompiler_47.dll component, which is found in either the current "Monthly Quality Rollup" or "update KB4019990". It is recommended to integrate it first, or you can install it later.  
 [Windows6.1-KB4019990-x64.msu](http://download.windowsupdate.com/c/msdownload/update/software/updt/2017/05/windows6.1-kb4019990-x64_35cc310e81ef23439ba0ec1f11d7b71dd34adfe5.msu)  
 [Windows6.1-KB4019990-x86.msu](http://download.windowsupdate.com/c/msdownload/update/software/updt/2017/05/windows6.1-kb4019990-x86_1365fb557d5e5917cbf59b507eac066ad89ea3f7.msu)
 
@@ -16,7 +16,9 @@
 
 * Add main addon first before LangPack addon, to get ASP.NET service localization properly.
 
-* [Download](https://drive.google.com/open?id=1r8NJ6k8a1XTX3cbi1Kyv8BQpTE-6A-d0)
+* [Download 4.8](https://github.com/abbodi1406/dotNetFx4xW7A/releases/tag/19.04.13)
+
+* [Download 4.7.2](https://drive.google.com/open?id=1r8NJ6k8a1XTX3cbi1Kyv8BQpTE-6A-d0)
 
 * Languages Codes Reference:  
 ```
