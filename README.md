@@ -4,7 +4,7 @@
 
 * The addon is simply .7z file with .WA extension.
 
-* Mainly to be used with [Wintoolkit](https://www.majorgeeks.com/files/details/win_toolkit.html), but can also be used with [Simplix UpdatePack7R2](https://blog.simplix.info/update7/).
+* Mainly to be used with [Wintoolkit](https://github.com/Legolash2o/WinToolkit_v1), but can also be used with [Simplix UpdatePack7R2](https://blog.simplix.info/update7/).
 
 * The addon will conflict with some Windows Updates (.NET 3.5 Family), so leave the addon's integration to the last.
 
